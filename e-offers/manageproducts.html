@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>e-offers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="manageproducts.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.0/dist/leaflet.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@3.0.2/dist/leaflet-search.min.css" />
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <script src="https://unpkg.com/leaflet@1.3.0/dist/leaflet.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-search/3.0.2/leaflet-search.min.js"></script>       
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+        
+    </head>
+    <body onload="allpr(),logornot()">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="barz.png" class="bar">
+            </label>
+            <label class="logo"> <a href="arxikhafterloginAdmin.html"><img src="pngwing.com.png" class="myImage"/></a>
+            <div class="hello">
+                <p>e-offers</p>
+            </div> 
+            </label>
+            
+            <div class="avatarDropdown" style="float:right;">
+    
+            <button class="bnav"><img src="boy.png"></button>
+            
+            <div class="avatarDropdown-content">
+                <a href="myprofileadmin.html">My Profile</a>
+                <a href="logout.php">Log out</a>
+              </div>
+            </div>
+    
+            <ul>
+                <li><a style="text-decoration:none;"href="arxikhafterloginAdmin.html">Home</a></li>
+                <li><a class="active" style="text-decoration:none;"href="manageproducts.html">Products</a></li>
+                <li><a style="text-decoration:none;"href="manageshops.html">Stores</a></li>
+                <li><a style="text-decoration:none;"href="statistics.html">Statistics</a></li>
+                <li><a style="text-decoration:none;"href="leaderboards.html">Leaderboards</a></li>
+            </ul>
+            
+            </nav>
+
+        <div class="boxforinfo">
+            <div class="tboxforinfo">
+                <h1>Products</h1>
+            </div>
+            <div class="bboxforinfo">
+                <form class="info1">
+                    <h3>Upload a products/ categories file</h3>
+                    <input type="file" id="cpsfile" name="cpsfile" class="inputfile">
+                    <p id="cpsstatus"></p>
+                    <button class="upld" id="cpsubmit" name="cpsubmit">Upload</button>
+                    <button class="delcps" id="delcps" name="delcps">Delete products</button>
+                    <button class="delcat" id="delcat" name="delcat">Delete categories</button>
+                    <script type="text/javascript" src="uploadcpsfile.js"></script>
+
+                    <h3>Upload a products prices file</h3>
+                    <input type="file" id="pfile" name="pfile" class="inputfile">
+                    <p id="pstatus"></p>
+                    <button class="upld" id="psubmit" name="psubmit">Upload</button>
+                    <button class="delp" id="delp" name="delp">Delete prices</button>
+                    <script type="text/javascript" src="uploadpfile.js"></script>
+
+                    <h3>Upload a product images file</h3>
+                    <input type="file" id="ifile" name="ifile" class="inputfile">
+                    <p id="istatus"></p>
+                    <button class="upld" id="isubmit" name="isubmit">Upload</button>
+                    <button class="deli" id="deli" name="deli">Delete images</button>
+
+                    <script type="text/javascript" src="uploadimagefile.js"></script>
+
+                    <h2>Products in the database</h2>
+                </form>
+
+
+            <form class="showp" id="showp">
+                <div id="showprod" class="row">
+                </div>
+            </form>
+            </div>
+            <script type="text/javascript" src="allproducts.js"></script>
+            <script type="text/javascript" src="isloggedin.js"></script>
+
+            </div>
+            <link rel="stylesheet" href="footer.css">
+            <div class="footer-basic">
+                <footer>
+                    <div class="social">
+                        <a href="https://www.instagram.com/valia_dou/">
+                            <i class="icon ion-social-instagram"></i>
+                        </a>
+                        <a href="https://www.instagram.com/thomas_tamv/">
+                            <i class="icon ion-social-instagram"></i>
+                        </a>
+                        <a href="https://www.instagram.com/balafas.d/">
+                            <i class="icon ion-social-instagram"></i>
+                        </a>
+                    </div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="arxikhafterloginadmin.html">Home</a></li>
+                        <li class="list-inline-item"><a href="adminContact.html">Contact</a></li>
+                        <li class="list-inline-item"><a href="adminAbout.html">About</a></li>
+                        <li class="list-inline-item"><a href="adminTerms.html">Terms</a></li>
+                        <li class="list-inline-item"><a href="adminPrivacy.html">Privacy Policy</a></li>
+                    </ul>
+                    <p class="copyright"> e-offers © 2023</p>
+                </footer>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,510 @@
+body{ 
+ background-color:#062C5A;
+ padding:0;
+ margin:0;
+ box-sizing:border-box;
+ background: url("./A-Illustration-Vector-City-Background-Graphics-3644670-1.jpg") no-repeat center center fixed;
+ background-size:cover;
+ align-items:center;
+ justify-content:center;
+ overflow-x: hidden; 
+ }
+ 
+*{
+ font-family: Bahnschrift SemiBold, Bahnschrift;
+ margin: 0;
+ padding: 0;
+ }
+ 
+ 
+
+.hello{
+ display:inline-block;
+ font-size: min(2vw, 17px);
+ }
+ 
+
+ 
+.overlay {
+ position: fixed;
+ max-width:100%;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background: rgba(0, 0, 0, 0.9);
+ transition: opacity 100ms;
+ display: none;
+ opacity: 0;
+ z-index:1;
+ }
+
+.overlay:target {
+ display: block;
+ opacity: 1;
+ }
+
+.myform {
+ text-align:center;
+ width:360px;
+ height:570px;
+ max-width:100%;
+ overflow-y: auto;
+ background:#13225B;
+ color:#fff;
+ top:50%;
+ left:50%;
+ position: relative;
+ transform:translate(-50%,-50%);
+ box-sizing:border-box;
+ padding-top:10px;
+ transition: all 5s ease-in-out;
+ }
+
+@media screen and (max-height: 500px) {
+ .myform {
+ height:200px;
+ }
+}
+
+@media screen and (max-height:700px) and (max-width:520px) {
+ 
+button.nav {
+ width:80px;
+ font-size:8px;
+ }
+}
+
+
+
+
+.serch_bar_div{
+ margin-top: 152px;
+ display: block;
+ text-align:center;
+ width:100%;
+ max-width:700px;
+ height:50px;
+ margin-left: auto;
+ margin-right: auto;
+ position: relative;
+ padding-bottom: 2%;
+}
+ 
+.serch_bar_div .search-bar{
+ height: 60px;
+ border-radius: 10px;
+ border-style: solid;
+ border-color: midnightblue;
+ text-align:center;
+ background: rgb(255, 254, 253);
+ position: relative;
+ display:flex;
+ border-radius:60px;
+ z-index: 1;
+ }
+
+ .kat_proiod_text_div {
+ position: relative;
+ white-space: nowrap;
+ width: 60%;
+ text-align: center;
+ }
+
+ .kat_proiod_text_div h3{
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    top: 19px;
+    font-size: 18px;
+ }
+ 
+ .serch_bar_div .search-bar .dropdown_div {
+ display: inline-block;
+ z-index: 1;
+ }
+
+ .serch_bar_div .search-bar .dropdown_div #selectcat{
+ height: 100%;
+ width: 40%;
+ font-size: 18px;
+ position: absolute;
+ background-color: hsl(0, 0%, 100%);
+ border: none;
+ border-left: 2px solid;
+ border-color: rgba(178, 175, 175, 0.701);
+ border-top-right-radius: 60px;
+ border-bottom-right-radius: 60px;
+ text-align: center;
+ }
+ 
+
+ .serch_bar_div .search-bar .dropdown_div #selectcat .dropdown_content{
+ display:inline-table;
+ border-radius: 60px;
+ align-items: center;
+ 
+ }
+
+ 
+ .dropdown_div:hover #selectcat {
+ background-color: #dadada;
+ 
+ }
+ 
+ 
+ #dropdown_content a:hover {
+ background-color:hsl(0, 19%, 54%);
+ 
+ }
+ 
+ .dropdown_div:hover .dropdown_content {
+ display: block;
+ 
+ }
+ 
+ 
+
+
+
+ .vertical {
+ border-left: 6px solid black;
+ height: 200px;
+ position:absolute;
+ left: 50%;
+}
+
+
+
+
+.myImage{
+ vertical-align:middle;
+ height: 64px;
+ }
+ 
+.userimage{
+ height:100px;
+ width:100px;
+ border-radius:50%
+
+ 
+ } 
+ 
+.myform h1{
+ margin:0;
+ font-size:24px;
+ }
+ 
+.myform p{
+ color: #fff;
+ margin:0;
+ padding-left:30px;
+ text-align:left;
+ font-size: 18px;
+ }
+ 
+.myform input{
+ width:80%;
+ margin-bottom:20px;
+ }
+ 
+.myform input[type="text"], input[type="password"]
+ {
+ border:none;
+ border-bottom: 2px solid rgb(255, 255, 255);
+ background:transparent;
+ outline:none;
+ height:40px;
+ color:#fff;
+ font-size:16px;
+ }
+ 
+.myform button{
+ border:none;
+ outline:none;
+ height:40px;
+ width:60%;
+ background:#fff;
+ color:#06144B;
+ font-size:18px;
+ border-radius:20px;
+ padding: 0px 20px;
+ margin-top: 10px;
+ margin-bottom:10px;
+ text-align:center;
+ }
+ 
+.myform button:hover{
+ cursor:pointer; 
+ opacity: .75;
+ }
+ 
+.myform a{
+ text-align:center;
+ text-decoration:none;
+ font-size:14px;
+ line-height:20px;
+ color:#fff;
+ }
+ 
+.bnav{ 
+ border:2px solid #fff;
+ outline:none;
+ height:40px;
+ max-width:100px;
+ width:20%;
+ background-color: #13225B;
+ color:#fff;
+ font-size:11px;
+ border-radius:20px;
+ padding: 0px 20px;
+ margin-top: 10px;
+ margin-bottom:10px;
+ text-align:center;
+ font-weight: 900;
+ line-height:32px;
+ float:right;
+ margin-right:10px;
+ }
+ 
+button:hover{
+ cursor:pointer; 
+ opacity: .75;
+ }
+ 
+.myform .close{
+ position: absolute;
+ top: 15px;
+ left:90%;
+ transition: all 200ms;
+ font-size: 30px;
+ font-weight: bold;
+ text-decoration: none;
+ color: rgb(134, 134, 134);
+ }
+
+.myform .close:hover {
+ color: #fff;
+ }
+ 
+nav{
+ background:#13225B;
+ height:60px;
+ width:100%;
+ }
+ 
+label.logo{
+ color:white;
+ font-size:18px;
+ line-height:20px;
+ padding: 0 10px;
+ font-weight:bold;
+ }
+ 
+
+ 
+.switch {
+ position: relative;
+ display: inline-block;
+ width: 42px;
+ height: 24px;
+ }
+ 
+.switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+ }
+ 
+.slider {
+ padding-left:10px;
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #ccc;
+ transition: .4s;
+ transition: .4s;
+ }
+ 
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 16px;
+ width: 16px;
+ left: 4px;
+ bottom: 4px;
+ background-color: white;
+ transition: .4s;
+ transition: .4s;
+ }
+ 
+input:checked + .slider {
+ background-color: #2196F3;
+ }
+ 
+input:focus + .slider {
+ box-shadow: 0 0 1px #2196F3;
+ }
+ 
+input:checked + .slider:before {
+ transform: translateX(16px);
+ }
+
+.slider.round {
+ border-radius: 34px;
+ }
+
+.slider.round:before {
+ border-radius: 50%;
+ }
+
+ #mapid{
+   border-radius: 10px;
+   border-style: solid;
+   border-color: midnightblue;
+   margin: 0 auto;
+   width: 900px;
+   height: 460px;
+   max-width: 100%;
+   margin-top: 50px;
+   z-index: 0;
+   margin-bottom: 187px;
+  }
+ 
+.leaflet-popup-content-wrapper .leaflet-popup-content{ 
+ height: 290px;
+ width: 280px;
+ font-size: 10px;
+ 
+}
+
+
+.leaflet-popup-tip-container .leaflet-popup-tip{
+background: #fff;
+}
+
+.leaflet-popup-content-wrapper .leaflet-popup-content .container{ 
+ margin-left:5% ;
+ margin-bottom:5% ;
+ background-color: #fff;
+ border:none;
+ width:90%;
+ border-radius:25px;
+ box-shadow:1px 1px 1px rgb(192, 192, 192);
+ outline:none;
+ height: 160px;
+ overflow:auto;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .row{ 
+ display: flex;
+ flex-wrap: wrap;
+ margin: 0 auto;
+ width:100%;
+ overflow-y: auto;
+ height:240px;
+}
+
+.leaflet-popup-content-wrapper .leaflet-popup-content .popuph3,.leaflet-popup-content-wrapper .leaflet-popup-content .popp{ 
+ text-align:center;
+ padding-left:5px;
+ margin: 0 0;
+}
+
+.leaflet-popup-content-wrapper .leaflet-popup-content .popuph2{
+ padding-top:4rem;
+ padding-bottom: 5px;
+ color: #353c4e;
+ letter-spacing: 2px;
+ width:100%;
+ font-size:15px;
+ text-align:center;
+ text-decoration-color: #181c25; 
+}
+
+.leaflet-popup-content-wrapper .leaflet-popup-content .ps{
+ color: #353c4e;
+ letter-spacing: 2px;
+ width:100%;
+ font-size:12px;
+ text-align:center;
+ text-decoration: underline; 
+ text-decoration-color: #181c25; 
+ margin-bottom:1px;
+}
+
+.leaflet-popup-content-wrapper .leaflet-popup-content .but{
+ width:40%;
+ text-align:center;
+ border:none;
+ border-radius: 20%;
+ height:30px;
+ margin-top:5px;
+ margin-left:15px;
+ background:midnightblue;
+ color:rgb(255, 255, 255);
+ font-size:12px;
+ padding: 0px 20px;
+ text-align:center;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content .noofbut{
+ width:40%;
+ border:none;
+ border-radius: 20%;
+ height:30px;
+ margin-top:5px;
+ margin-left:30%;
+ background:midnightblue;
+ color:rgb(255, 255, 255);
+ font-size:12px;
+ padding: 0px 20px;
+ text-align:center;
+}
+
+
+
+
+
+
+
+@media (max-width: 335px){
+ .checkbtn{
+ display: block;
+ }
+ label.logo{
+ font-size:10px;
+ line-height:20px;
+ padding: 0 5px;
+ font-weight:bold;
+ }
+
+ nav ul li a{
+ 
+ font-size: 10px;
+ padding: 2px 5px;
+ border-radius: 3px;
+ }
+
+ .myImage{
+ vertical-align:middle;
+ height: 64px;
+ }
+ .bnav{
+ margin-right: 15px;
+ }
+}
+
+@media (max-width: 320px){
+ .bnav{
+ margin-right: 10px;
+ }
+}
+
+@media (max-width: 425px){
+   .bnav{
+   font-size: 7px;
+   line-height:20px;
+   }
+  }
